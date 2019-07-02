@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<style>
+	td{text-align: center;}
+</style>
+<div class="col-md-5 col-md-offset-3">
+	<h2>ROL</h2>
+	
+	<table class="table " width="800px">
+	<tr><td>
+		<div class="row">
+			<button class="btn btn-default" value="test value" onClick='cuatroCaras(this)'>Dado 4 Caras</button>
+		</div></td><td>
+		<div class="row">
+			<button class="btn btn-primary" value="test value" onClick='seisCaras(this)'>Dado 6 Caras</button>
+		</div>
+	</td></tr>
+	<tr><td>
+		<div class="row">
+			<button class="btn btn-success" value="test value" onClick='ochoCaras(this)'>Dado 8 Caras</button>
+		</div></td><td>
+		<div class="row">
+			<button class="btn btn-info" value="test value" onClick='doceCaras(this)'>Dado 12 Caras</button>
+		</div>
+	</td></tr>
+	<tr><td>
+		<div class="row">
+			<button class="btn btn-warning" value="test value" onClick='veinteCaras(this)'>Dado 20 Caras</button>
+		</div></td><td>
+		<div class="row">
+			<button class="btn btn-danger" value="test value" onClick='diezCaras(this)'>Dado 10 Caras</button>
+		</div>
+	</td></tr>
+		
+	<tr><td class="danger">
+		<div class="row">
+			<button class="btn btn-default" value="test value" onClick='treintaCaras(this)'>Dado 30 Caras</button>
+		</div></td><td class="danger">
+		<div class="row">
+			<button class="btn btn-primary" value="test value" onClick='cienCaras(this)'>Dado 100 Caras</button>
+		</div>
+		</td></tr>
+	</table>
+ 
+</div>
+<script>
+	
+
+function cuatroCaras(elmt) {
+	var random = Math.floor(Math.random() * 4)+1; 
+		console.log(random);
+            //alert(random);
+    swal({
+    	icon: "success",
+    	title: 'Dado 4 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});
+}	
+
+function seisCaras(elmt) {
+	var random = Math.floor(Math.random() * 6)+1; 
+		console.log(random);
+            //alert(random);
+    swal({
+    	icon: "success",
+    	title: 'Dado 6 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});
+}
+
+function ochoCaras(elmt) {
+	var random = Math.floor(Math.random() * 8)+1; 
+		console.log(random);
+            //alert(random);
+    swal({
+    	icon: "success",
+    	title: 'Dado 8 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});
+}
+
+function doceCaras(elmt) {
+	var random = Math.floor(Math.random() * 12)+1; 
+		console.log(random);
+            //alert(random);
+    swal({
+    	icon: "success",
+    	title: 'Dado 12 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});
+}
+
+function veinteCaras(elmt) {
+	var random = Math.floor(Math.random() * 20)+1; 
+		console.log(random);
+            //alert(random);
+    swal({
+    	icon: "success",
+    	title: 'Dado 20 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});        
+}
+
+function seisCaras(elmt) {
+	var random = Math.floor(Math.random() * 6)+1; 
+		console.log(random);
+            //alert(random);
+    swal({
+    	icon: "success",
+    	title: 'Dado 6 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});
+}
+
+function diezCaras(elmt) {
+	var random = (Math.floor(Math.random() * 10)+1)*10; 
+		console.log(random*10);
+            //alert(random);
+ 	swal({
+ 		icon: "success",
+    	title: 'Dado 10 Caras',
+    	text: 'Has lanzado un ' +random+'%',
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});    
+
+}
+
+// Raros
+
+function treintaCaras(elmt) {
+	var random = Math.floor(Math.random() * 30)+1; 
+		console.log(random);
+            //alert(random);
+ 	swal({
+ 		icon: "success",
+    	title: 'Dado 30 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});    
+
+}
+
+function cienCaras(elmt) {
+	var random = Math.floor(Math.random() * 100)+1; 
+		console.log(random);
+            //alert(random);
+ 	swal({
+ 		icon: "success",
+    	title: 'Dado 100 Caras',
+    	text: 'Has lanzado un ' +random,
+    	html: '<p>Mensaje de texto con <strong>formato</strong>.</p>',
+    	type: 'success',
+    	timer: 3000,
+  	});    
+
+}
+</script>
+
+</body>
+</html> 
+
+
